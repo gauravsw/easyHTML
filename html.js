@@ -4,96 +4,171 @@ var str = "<div id='form'><form method='post' action=" + actionUrl + "><br />";
 str+="Username: <input type='text' /><br /><br />Password: <input type='password' /><br />";
 str+="</form></div>";
 document.write(str);
+return str;
 }
 
 function br()
 {
-document.write("<br /><br /><br />");
+document.write(str = "<br /><br /><br />");
+return str;
 }
 
-function b(c)  { document.write("<b>"+c+"</b>"); }
+function abbr(title,abbr) { document.write(str="<abbr title='" + title + "'>" + abbr + "</abbr>"); return str;}
 
-function i(c) { document.write("<i>" + c + "</i>"); }
+function acronym(title,abbr) { document.write(str="<acronym title='" + title + "'>" + abbr + "</acronym>");return str; }
 
-function bi(c) { document.write("<b><i>" +  c + "</i></b>"); }
+function address(addr) { document.write(str="<address>"+ addr + "</address>");return str; }
 
-function u(c) { document.write("<u>" + c + "</u>"); }
+function button(text) { document.write(str="<button type='button'>" + text + "</button>");return str; }
 
-function biu(c) { document.write("<b><i><u>" + c + "</u></i></b>")
+function del(c) { document.write(str="<del>" + c + "</del>");return str; }
 
-function span(c) { document.write("<span>" + c + "</span>"); }
+function s(c) { document.write(str="<s>" + c + "</s>");return str; }
 
-function strong(c) { document.write("<strong>" + c + "</strong>"); }
+function strike(c) { document.write(str="<strike>" + c + "</strike>");return str; }
 
-function em(c) { document.write("<em>" + c + "</em>"); }
+function dl(id) { document.write(str="<dl id='" + id + "'>");return str; }
 
-function strongem(c) { document.write("<strong><em>" + c + "</strong></em>"); }
+function dt(c) { document.write(str="<dt>" + c + "</dt>");return str; }
 
-function strongemu(c) { document.write("<strong><em><u>" + c + "</strong></em></u>"); }
+function dd(c) { document.write(str="<dd>" + c + "</dd>");return str; }
 
-function blockquote(c) { document.write("<blockquote>" + c "</blockquote>"); }
+function dlc() { document.write("</dl>"); }
 
-function title(c) { document.write("<title>" + c + "</title>"); }
+function input(type,name,id,val) { document.write(str="<input type='" + type + "' name='" + name + "' id='" + id + "' val='" + val +"'/>"); }
 
-function div(id) { document.write("<div id='" + id + "'"); }
+function summary(c) { document.write(str="<summary>" + c + "</summary>");return str; }
 
-function div() { document.write("</div>"); }
+function dfn(title,c) { document.write(str="<dfn id='" +id + "' title='" + title + "'>" + c + "</dfn>");return str; }
 
-function table(id) { document.write("<table id='" + id + "'"); }
+function dfnabbr(title,abbr) { document.write(str="<dfn id='" + id + "'><abbr title='" + title + "'>" + "</abbr></dfn>");return str; }
 
-function table() { document.write("</table>"); }
+function meter(min,max,value) { document.write(str="<meter min='" + min + "' max='" + max + "' value='" + value + "'></meter>");return str; }
 
-function tr(id) { document.write("<tr id='" + id + "'"); }
+function meter2(val,percent) { document.write(str="<meter value='" + value + "'>" + percent + "%" + "</meter>");return str; }
 
-function tr() { document.write("</tr>"); }
+function progress(value,max) { document.write(str="<progress value='" + value + "' max='" + max +"'></progress>");return str; }
 
-function td(c) { document.write("<td>" + c + "</td>"); }
+function code(c) { document.write(str="<code>" + c + "</code>");return str; }
 
-function h1(c) { document.write("<h1>"+c+"</h1>"); }
+function samp(c) { document.write(str="<samp>" + c + "</samp>");return str; }
 
-function h2(c) { document.write("<h2>"+c+"</h2>"); }
+function cite(c) { document.write(str="<cite>" + c + "</cite>");return str; }
 
-function h3(c) { document.write("<h3>"+c+"</h3>"); }
+function q(c) { document.write(str="<q>" + c + "</q>");return str; }
 
-function h4(c) { document.write("<h4>"+c+"</h4>"); }
+function header(c) { document.write(str="<header>" + c + "</header>");return str; }
 
-function h5(c) { document.write("<h5>"+c+"</h5>"); }
+function footer(c) { document.write(str="<footer>" + c + "</footer>");return str; }
 
-function h6(c) { document.write("<h6>"+c+"</h6>"); }
+function section(c) { document.write(str="<section>" + c + "</section>");return str; }
+
+function article(c) { document.write(str="<article>" + c + "</article>");return str; }
+
+function ins(c) { document.write(str="<ins>" + c + "</ins>");return str; }
+
+function var(c) { document.write(str="<var>" + c + "</var>");return str; }
+
+function source(c) { document.write(str="<source>" + c + "</source>");return str; }
+
+function kbd(c) { document.write(str="<kbd>" + c + "</kbd>");return str; }
+
+function sup(c) { document.write(str="<sup>" + c + "</sup>");return str; }
+
+function sub(c) { document.write(str="<sub>" + c + "</sub>");return str; }
+
+function param(name,value)  { document.write(str="<param name='" + name + "' value='" + value + "'>");return str; }
+
+function big(c) { document.write(str="<big>" + c + "</big>");return str; }
+
+function small(c) { document.write(str="<small>" + c +"</small>");return str; }
+
+function b(c)  { document.write(str="<b>"+c+"</b>");return str; }
+
+function i(c) { document.write(str="<i>" + c + "</i>");return str; }
+
+function bi(c) { document.write(str="<b><i>" +  c + "</i></b>");return str; }
+
+function u(c) { document.write(str="<u>" + c + "</u>");return str; }
+
+function biu(c) { document.write(str="<b><i><u>" + c + "</u></i></b>");return str; }
+
+function span(c) { document.write(str="<span>" + c + "</span>");return str; }
+
+function strong(c) { document.write(str="<strong>" + c + "</strong>");return str; }
+
+function em(c) { document.write(str="<em>" + c + "</em>");return str; }
+
+function strongem(c) { document.write(str="<strong><em>" + c + "</strong></em>");return str; }
+
+function strongemu(c) { document.write(str="<strong><em><u>" + c + "</strong></em></u>");return str; }
+
+function blockquote(c) { document.write(str="<blockquote>" + c "</blockquote>");return str; }
+
+function title(c) { document.write(str="<title>" + c + "</title>");return str; }
+
+function div(id) { document.write(str="<div id='" + id + "'");return str; }
+
+function divc() { document.write(str="</div>");return str; }
+
+function table(id) { document.write(str="<table id='" + id + "'");return str; }
+
+function tablec() { document.write(str="</table>");return str; }
+
+function tr(id) { document.write(str="<tr id='" + id + "'");return str; }
+
+function trc() { document.write(str="</tr>");return str; }
+
+function td(c) { document.write(str="<td>" + c + "</td>");return str; }
+
+function h1(c) { document.write(str="<h1>"+c+"</h1>");return str; }
+
+function h2(c) { document.write(str="<h2>"+c+"</h2>");return str; }
+
+function h3(c) { document.write(str="<h3>"+c+"</h3>");return str; }
+
+function h4(c) { document.write(str="<h4>"+c+"</h4>");return str; }
+
+function h5(c) { document.write(str="<h5>"+c+"</h5>");return str; }
+
+function h6(c) { document.write(str="<h6>"+c+"</h6>");return str; }
 
 function selectlistday() 
 {
-  document.write("<select>");
+  document.write(str="<select>");
   for(i=1;i<=31;i++)
   {
-    document.write("<option>" + i + "</option>")
+    document.write(str+="<option>" + i + "</option>")
   }
-  document.write("</select>");
+  document.write(str+="</select>");
+  return str;
 }
 
 function selectlistmonth() 
 {
-document.write("<select>");
+document.write(str="<select>");
 for(i=1;i<=12;i++)
 {
-  document.write("<option>" + i + "</option>");
+  document.write(str+="<option>" + i + "</option>");
 }
-document.write("</select>");
+document.write(str+="</select>");
+return str;
 }
 
 function selectlistyear(start,end) 
 { 
-document.write("<select>");
+document.write(str="<select>");
 for(i=start;i<=end;i++)
 
-document.write("<option>" + i + "</option>")
+document.write(str+="<option>" + i + "</option>")
 
-document.write("</select>");
+document.write(str+="</select>");
+return str;
 }
 
 function selectstatelist()
 {
-  document.write('<select id="statelist>"' +
+  document.write(str='<select id="statelist>"' +
 '<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>' +
 '<option value="Andhra Pradesh">Andhra Pradesh</option>' +
 '<option value="Arunachal Pradesh">Arunachal Pradesh</option>' +
@@ -130,11 +205,12 @@ function selectstatelist()
 '<option value="Uttar Pradesh">Uttar Pradesh</option>' +
 '<option value="West Bengal">West Bengal</option>' +
 '</select>');
+return str;
 }
 
 function countryselectlist()
 {
-  document.write('<select name="countrylist"> \
+  document.write(str='<select name="countrylist"> \
 <option value="" selected="selected">Select Country</option> \
 <option value="United States">United States</option> \
 <option value="United Kingdom">United Kingdom</option> \
@@ -382,14 +458,17 @@ function countryselectlist()
 <option value="Zambia">Zambia</option>  \
 <option value="Zimbabwe">Zimbabwe</option> \
 </select>');
+return str;
 }
 
 function datalist()
 {
+  document.write(str="<datalist>");
   for(i in arguments)
   {
-    document.write("<option value='" + i + "'>");
+    document.write(str+="<option value='" + i + "'>");
   }
+  document.write(str+="</datalist>");
 }
 
 
