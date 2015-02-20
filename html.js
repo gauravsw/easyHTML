@@ -15,9 +15,11 @@ function b(c)  { document.write("<b>"+c+"</b>"); }
 
 function i(c) { document.write("<i>" + c + "</i>"); }
 
-function bi(c) { document.write("<b><i>" +  c + "</b></i>"); }
+function bi(c) { document.write("<b><i>" +  c + "</i></b>"); }
 
 function u(c) { document.write("<u>" + c + "</u>"); }
+
+function biu(c) { document.write("<b><i><u>" + c + "</u></i></b>")
 
 function span(c) { document.write("<span>" + c + "</span>"); }
 
@@ -27,13 +29,15 @@ function em(c) { document.write("<em>" + c + "</em>"); }
 
 function strongem(c) { document.write("<strong><em>" + c + "</strong></em>"); }
 
+function strongemu(c) { document.write("<strong><em><u>" + c + "</strong></em></u>"); }
+
 function blockquote(c) { document.write("<blockquote>" + c "</blockquote>"); }
 
 function title(c) { document.write("<title>" + c + "</title>"); }
 
 function div(id) { document.write("<div id='" + id + "'"); }
 
-function div() { document.write("</div>");
+function div() { document.write("</div>"); }
 
 function table(id) { document.write("<table id='" + id + "'"); }
 
@@ -379,6 +383,15 @@ function countryselectlist()
 <option value="Zimbabwe">Zimbabwe</option> \
 </select>');
 }
+
+function datalist()
+{
+  for(i in arguments)
+  {
+    document.write("<option value='" + i + "'>");
+  }
+}
+
 
 function olist()
 {
