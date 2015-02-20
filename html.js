@@ -1,7 +1,7 @@
 function form(actionUrl)
 {
 var str = "<div id='form'><form method='post' action=" + actionUrl + "><br />";
-str+="Username:<input type='text' /><br />Password:<input type='password' /><br />";
+str+="Username: <input type='text' /><br /><br />Password: <input type='password' /><br />";
 str+="</form></div>";
 document.write(str);
 }
@@ -62,7 +62,6 @@ function olist()
   }
   document.write("</ol>");
   }
-}
 
 function ulist()
 {
@@ -72,7 +71,6 @@ function ulist()
     document.write("<li>" + i + "</li>");
   }
   document.write("</ul>");
-  }
 }
 
 function stylesheet()
@@ -81,7 +79,7 @@ function stylesheet()
   {
    document.write("<link rel='stylesheet' href='"+ i +"' type='text/css'");
   }
-  }
-
-function 
+  
 }
+
+
