@@ -23,15 +23,65 @@ function h5(c) { document.write("<h5>"+c+"</h5>"); }
 
 function h6(c) { document.write("<h6>"+c+"</h6>"); }
 
-function selectlistday() { document.write("<select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>"+
-"<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option>"+
-"<option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option>"+
-"<option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option>"+
-"<option>30</option><option>31</option></select>");
+function selectlistday() 
+{
+  document.write("<select>");
+  for(i=1;i<=31;i++)
+  {
+    document.write("<option>" + i + "</option>")
+  }
+  document.write("</select>");
 }
 
-function selectlistmonth() { document.write("<select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>"+
-"<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>");
+function selectlistmonth() 
+{
+document.write("<select>");
+for(i=1;i<=12;i++)
+{
+  document.write("<option>" + i + "</option>");
+}
+document.write("</select>");
 }
 
+function selectlistyear(start,end) 
+{ 
+document.write("<select>");
+for(i=start;i<=end;i++)
 
+document.write("<option>" + i + "</option>")
+
+document.write("</select>");
+}
+
+function olist()
+{
+  document.write("<ol>");
+  for(i in arguments)
+  {
+    document.write("<li>" + i + "</li>");
+  }
+  document.write("</ol>");
+  }
+}
+
+function ulist()
+{
+  document.write("<ul>");
+  for(i in arguments)
+  {
+    document.write("<li>" + i + "</li>");
+  }
+  document.write("</ul>");
+  }
+}
+
+function stylesheet()
+{
+  for(i in arguments)
+  {
+   document.write("<link rel='stylesheet' href='"+ i +"' type='text/css'");
+  }
+  }
+
+function 
+}
