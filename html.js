@@ -67,7 +67,7 @@ function article(c) { document.write(str="<article>" + c + "</article>");return 
 
 function ins(c) { document.write(str="<ins>" + c + "</ins>");return str; }
 
-function var(c) { document.write(str="<var>" + c + "</var>");return str; }
+function var2(c) { document.write(str="<var>" + c + "</var>");return str; }
 
 function source(c) { document.write(str="<source>" + c + "</source>");return str; }
 
@@ -103,7 +103,7 @@ function strongem(c) { document.write(str="<strong><em>" + c + "</strong></em>")
 
 function strongemu(c) { document.write(str="<strong><em><u>" + c + "</strong></em></u>");return str; }
 
-function blockquote(c) { document.write(str="<blockquote>" + c "</blockquote>");return str; }
+function blockquote(c) { document.write(str="<blockquote>" + c + "</blockquote>");return str; }
 
 function title(c) { document.write(str="<title>" + c + "</title>");return str; }
 
@@ -132,6 +132,47 @@ function h4(c) { document.write(str="<h4>"+c+"</h4>");return str; }
 function h5(c) { document.write(str="<h5>"+c+"</h5>");return str; }
 
 function h6(c) { document.write(str="<h6>"+c+"</h6>");return str; }
+
+function wbr(c) { document.write(str="<wbr>" + c + "</wbr>"); return str; }
+
+function aside(c) { document.write(str="<aside>" + c + "</aside>"); return str; }
+
+function tt(c) { document.write(str="<tt>" + c + "</tt>"); return str;}
+
+function details(c) { document.write(str="<details>" + c + "</details>"); return str; }
+
+function bdi(c) { document.write(str="<bdo>" + c + "</bdo>"); return str;}
+
+function bdo(c) { document.write(str="<bdi>" + c + "</bdi>"); return str;}
+
+function rt(c) { document.write(str="<rt>" + c + "</rt>"); return str;}
+
+function time(c) { document.write(str="<time>" + c + "</time>"); return str; } 
+
+function center(c) { document.write(str="<center>" + c + "</center>"); return str; }
+
+function caption(c) { document.write(str="<caption>"+ c + "</caption>"); return str;}
+
+function img(src,alt,width,height) { document.write(str="<img src='" + src + "' alt='" + alt + "' width='" + width + "' height='" + height + "/>");
+return str; }
+
+function figure(c)  { document.write(str="<figure>" + c + "</figure>"); return str; }
+
+function legend(c) { document.write(str="<legend>" + c + "</legend>"); return str; }
+
+function fieldset(c) { document.write(str="<fieldset>" + c + "</fieldset>"); return str; } 
+
+function canvas(id ,text) { document.write(str="<canvas id='" + id + "'>"+ text + "</canvas>"); return str; }
+
+function mark(c) {  document.write(str="<mark>" + c + "</mark>"); return str; }
+
+function label(for,text) { document.write(str="<label for='" + for + "'>" + text + "</label>"); return str; }
+
+function main(c) { document.write(str="<main>"+c+ "</main>"); return str; }
+
+function keygen(c) { document.write(str="<keygen name='" + c + "'>"); return str; }
+
+function figcaption(c) { document.write(str="<figcaption>" + c + "</figcaption>"); return str; }
 
 function selectlistday() 
 {
