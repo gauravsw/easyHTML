@@ -99,9 +99,9 @@ function strong(c) { document.write(str="<strong>" + c + "</strong>");return str
 
 function em(c) { document.write(str="<em>" + c + "</em>");return str; }
 
-function strongem(c) { document.write(str="<strong><em>" + c + "</strong></em>");return str; }
+function strongem(c) { document.write(str="<strong><em>" + c + "</em></strong>");return str; }
 
-function strongemu(c) { document.write(str="<strong><em><u>" + c + "</strong></em></u>");return str; }
+function strongemu(c) { document.write(str="<strong><em><u>" + c + "</u></em></strong>");return str; }
 
 function blockquote(c) { document.write(str="<blockquote>" + c + "</blockquote>");return str; }
 
@@ -166,7 +166,7 @@ function canvas(id ,text) { document.write(str="<canvas id='" + id + "'>"+ text 
 
 function mark(c) {  document.write(str="<mark>" + c + "</mark>"); return str; }
 
-function label(for,text) { document.write(str="<label for='" + for + "'>" + text + "</label>"); return str; }
+function label(for_,text) { document.write(str="<label for='" + for_ + "'>" + text + "</label>"); return str; }
 
 function main(c) { document.write(str="<main>"+c+ "</main>"); return str; }
 
@@ -179,10 +179,9 @@ function selectlistday()
   document.write(str="<select>");
   for(i=1;i<=31;i++)
   {
-    document.write(str+="<option>" + i + "</option>")
+    document.write("<option>" + i + "</option>")
   }
-  document.write(str+="</select>");
-  return str;
+  document.write("</select>");
 }
 
 function selectlistmonth() 
@@ -190,10 +189,9 @@ function selectlistmonth()
 document.write(str="<select>");
 for(i=1;i<=12;i++)
 {
-  document.write(str+="<option>" + i + "</option>");
+  document.write("<option>" + i + "</option>");
 }
-document.write(str+="</select>");
-return str;
+document.write("</select>");
 }
 
 function selectlistyear(start,end) 
@@ -201,15 +199,15 @@ function selectlistyear(start,end)
 document.write(str="<select>");
 for(i=start;i<=end;i++)
 
-document.write(str+="<option>" + i + "</option>")
+document.write("<option>" + i + "</option>")
 
-document.write(str+="</select>");
-return str;
+document.write("</select>");
 }
 
 function selectstatelist()
 {
   document.write(str='<select id="statelist>"' +
+'<option value="" selected="selected">Select State</option>' +
 '<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>' +
 '<option value="Andhra Pradesh">Andhra Pradesh</option>' +
 '<option value="Arunachal Pradesh">Arunachal Pradesh</option>' +
@@ -507,9 +505,9 @@ function datalist()
   document.write(str="<datalist>");
   for(i in arguments)
   {
-    document.write(str+="<option value='" + i + "'>");
+    document.write("<option value='" + i + "'>");
   }
-  document.write(str+="</datalist>");
+  document.write("</datalist>");
 }
 
 
@@ -530,7 +528,7 @@ function ulist()
   document.write("<ul id='" + id +"'>");
   for(i=1;i<arguments.length;i++)
   {
-    document.write("<li>" + i + "</li>");
+    document.write("<li>" + arguments[i] + "</li>");
   }
   document.write("</ul>");
 }
@@ -543,5 +541,4 @@ function stylesheet()
   }
   
 }
-
 
